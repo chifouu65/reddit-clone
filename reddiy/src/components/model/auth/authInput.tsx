@@ -15,6 +15,7 @@ const AuthInput:React.FC<authInputProps> = () => {
             <Flex direction='column' mt={4} alignItems='center' justifyContent='center' width='100%'>
                 {modalState.view === "login" && <Login/>}
                 {modalState.view === "signup" && <SignUp/>}
+                {modalState.view === "forgotPassword" && <h1>forgot password</h1>}
             </Flex>
         </>
     )
