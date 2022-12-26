@@ -1,13 +1,16 @@
 import React from 'react'
 import {Flex, Icon, Text} from "@chakra-ui/react";
 import {Menu, MenuButton, MenuList} from "@chakra-ui/menu";
-import {TiHome} from "react-icons/all";
+import {TiHome} from "react-icons/ti";
 import {ChevronDownIcon} from "@chakra-ui/icons";
 import Community from "./Community";
+import {User} from "@firebase/auth";
 
-type DirectoryProps = {}
+type DirectoryProps = {
+    user?: User | null;
+}
 
-const Directory: React.FC<DirectoryProps> = ({}) => {
+const Directory: React.FC<DirectoryProps> = ({user}) => {
     return (
         <Menu>
             <MenuButton cursor={'pointer'} mr={2} ml={{base: 0, md: 2}} padding={"0px 6px"} borderRadius={4} _hover={{
@@ -24,7 +27,7 @@ const Directory: React.FC<DirectoryProps> = ({}) => {
                 </Flex>
             </MenuButton>
             <MenuList>
-                <Community/>
+                <Community user={user}/>
             </MenuList>
         </Menu>
     );

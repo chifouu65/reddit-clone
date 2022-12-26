@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
             <Flex align={'center'} width={{base: '44px', md: 'auto'}} mr={{base: 2, md: 0}}>
                 <Image src='/vercel.svg' width={120} height={30} alt={"fr"}/>
             </Flex>
-            {user && <Directory/>}
+            {user && <Directory user={user}/>}
             <SearchInput user={user}/>
             <RightContent user={user}/>
         </Flex>

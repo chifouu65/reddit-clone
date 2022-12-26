@@ -2,7 +2,10 @@ import React from 'react'
 import {Menu, MenuButton, MenuDivider, MenuItem, MenuList} from "@chakra-ui/menu";
 import {Button, Flex, Icon, Text} from "@chakra-ui/react";
 import {signOut, User} from "@firebase/auth";
-import {FaRedditSquare, VscAccount, CgProfile, MdOutlineLogin} from "react-icons/all";
+import {FaRedditSquare} from "react-icons/fa";
+import {CgProfile} from "react-icons/cg";
+import {VscAccount} from "react-icons/vsc";
+import {MdOutlineLogin} from "react-icons/md";
 import {ChevronDownIcon} from "@chakra-ui/icons";
 import {auth} from "../../../firebase/clientApp";
 import {useSetRecoilState} from "recoil";

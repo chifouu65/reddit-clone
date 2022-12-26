@@ -14,11 +14,6 @@ type RightContentProps = {
 export const RightContent: React.FC<RightContentProps> = ({user}) => {
     return (
         <>
-            {/*
-                      <Button
-                            onClick={() => signOut(auth)}
-                        >Logout</Button>
-                        */}
             <AuthModal/>
             <Flex justify={'center'} align={'center'}>
                 {

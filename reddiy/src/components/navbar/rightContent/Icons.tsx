@@ -1,5 +1,5 @@
 import {Flex, Icon} from '@chakra-ui/react';
-import {BsArrowRight, BsArrowRightCircle, BsArrowUpCircle, BsChatDots} from "react-icons/bs";
+import {BsArrowRightCircle, BsChatDots} from "react-icons/bs";
 import {GrAdd} from "react-icons/gr";
 import {IoFilterCircleOutline, IoNotificationsCircleOutline, IoVideocamOutline} from "react-icons/io5";
 import React from "react";
